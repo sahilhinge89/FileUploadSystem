@@ -1,5 +1,5 @@
 const fileModel = require("../models/fileModel");
-const cloudinary = require("cloudinary").v2;
+// const cloudinary = require("cloudinary").v2;
 
 // ==========================================
 // LOCAL FILE UPLOAD
@@ -65,18 +65,18 @@ function isFileTypeSupported(type, supportedTypes) {
 // UPLOAD FILE TO CLOUDINARY
 // ==========================================
 
-async function uploadFileToCloudinary(file, folder) {
-    const options = {
-        folder: folder
-    };
+// async function uploadFileToCloudinary(file, folder) {
+//     const options = {
+//         folder: folder
+//     };
 
-    const response = await cloudinary.uploader.upload(
-        file.tempFilePath,
-        options
-    );
+//     const response = await cloudinary.uploader.upload(
+//         file.tempFilePath,
+//         options
+//     );
 
-    return response;
-}
+//     return response;
+// }
 
 
 // ==========================================
@@ -181,7 +181,7 @@ exports.imageUpload = async (req, res) => {
         });
         */
 
-
+ 
         // ------------------------------------------
         // 8. Send response
         // ------------------------------------------

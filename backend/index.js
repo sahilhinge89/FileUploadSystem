@@ -33,10 +33,10 @@ const connectDB = require("./config/database");
 connectDB.connect();
 
 
-// Connect Cloudinary
-const cloudinary = require("./config/cloudinary");
+// Connect Cloudinary [keeping refrence]
+// const cloudinary = require("./config/cloudinary");
 
-cloudinary.cloudinaryConnect();
+// cloudinary.cloudinaryConnect();
 
 
 // Mount API route
