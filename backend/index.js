@@ -20,10 +20,7 @@ app.use(cors());
 const fileupload = require("express-fileupload");
 
 app.use(
-    fileupload({
-        useTempFiles: true,
-        tempFileDir: "/tmp/"
-    })
+    fileupload()
 );
 
 
@@ -31,6 +28,7 @@ app.use(
 const connectDB = require("./config/database");
 
 connectDB.connect();
+
 
 
 // Connect Cloudinary [keeping refrence]
