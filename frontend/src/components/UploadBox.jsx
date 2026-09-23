@@ -32,7 +32,7 @@ function UploadBox() {
             formData.append("email", "sahil89@gmail.com");
 
             const response = await axios.post(
-                "http://localhost:4000/api/v1/upload/imageUpload",
+              `${import.meta.env.VITE_API_URL}/upload/imageUpload`,
                 formData
             );
 
